@@ -5,34 +5,34 @@ html body{
 }
 
  /*$backGround: rgb(176, 241, 250);*/
- $display: grid;
+  
  /*$articleBackGround:pink;*/
-$backgroundWhite: rgba(255, 255, 255, 0.3);
+
  
 main {
    /* background: $backGround;*/
-    display:$display;
+    display:grid;
     grid-template-columns:1fr 2fr;
-    grid-template-raws:1fr 1fr;
+    grid-template-rows:1fr 1fr;
 }
 
 .accueil{
-  margin-top:120px;
+  margin-top: 120px;
   padding-top: 400px;
-  display: $display;
+  display: grid;
   grid-column-start: 1;
   grid-column-end: -1;
-  grid-raw-start: 1;
-  grid-raw-end: 2;
+  grid-row-start: -1;
+  grid-row-end: 1;
   background-image: url("https://sportsante13.fr/wp-content/uploads/2019/10/judo-4454836_1280-1170x550.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
-        span,h1{
+        span, h1 {
             position:absolute;
-            padding-left:50px;
-            margin-top:-310px;
-            color:white;
+            padding-left: 50px;
+            margin-top: -310px;
+            color: white;
         }
         span{
             margin-top:-200px;
@@ -56,17 +56,19 @@ aside{
 }
      
 .contact{
+    width: 80%;
+    height: 560 px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    margin-top: 40px;
+    margin-left: 40px;
+   
     
-    padding:2rem;
-    margin-top:40px;
-    margin-left:40px;
-    background-color: $backgroundWhite;
-    height:560px;
-    width:80%;
-    border-radius:20px;
+    
+    border-radius: 20px;
     text-align:center;
-    border-left:1px solid  $backgroundWhite;
-    border-top:1px solid  $backgroundWhite;
+    border-left:1px solid  rgba(255, 255, 255, 0.3);
+    border-top:1px solid  rgba(255, 255, 255, 0.3);
     box-shadow:20px 20px 40px -6px rgba(0,0,0,.2);
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -87,8 +89,8 @@ aside{
     
         background: transparent;
         border:none;
-        border-left:1px solid $backgroundWhite;
-        border-top:1px solid $backgroundWhite;
+        border-left:1px solid rgba(255, 255, 255, 0.3);
+        border-top:1px solid rgba(255, 255, 255, 0.3);
         padding:0.5rem;
         width:200px;
         border-radius:50px;
@@ -113,8 +115,8 @@ aside{
         width:200px;
         background: transparent;
         border:none;
-        border-left:1px solid $backgroundWhite;
-        border-top:1px solid $backgroundWhite;
+        border-left:1px solid rgba(255, 255, 255, 0.3);
+        border-top:1px solid rgba(255, 255, 255, 0.3);
         padding:0.8rem;
         width:200px;
         border-radius:10px;
@@ -135,8 +137,8 @@ aside{
         margin-bottom:20px;
         background: transparent;
         border:none;
-        border-left:1px solid $backgroundWhite;
-        border-top:1px solid $backgroundWhite;
+        border-left:1px solid rgba(255, 255, 255, 0.3);
+        border-top:1px solid rgba(255, 255, 255, 0.3);
         padding:1.5rem;
         text-transform: uppercase;
         border-radius:20px;
@@ -155,13 +157,13 @@ aside{
      }
         
      .drop{
-       background:$backgroundWhite;
+       background:rgba(255, 255, 255, 0.3);
        backdrop-filter:blur(10px);
        -webkit-backdrop-filter: blur(10px);
        -moz-backdrop-filter:blur(10px);  
         position:absolute;
-        border-left:1px solid $backgroundWhite;
-        border-top:1px solid $backgroundWhite;
+        border-left:1px solid rgba(255, 255, 255, 0.3);
+        border-top:1px solid rgba(255, 255, 255, 0.3);
         border-radius:10px;
         box-shadow: 10px 10px 60px -8px rgba(0,0,0,.2);
          }   
@@ -227,9 +229,9 @@ article{
                      height:auto;
                      display:grid;
                      grid-template-columns:200px 200px 200px;
-                     grid-template-raws:250px 250px 250px;
+                     grid-template-rows:250px 250px;
                      justify-content:space-around;
-                     grid-gap:30px;
+                     grid-gap:40px;
                      margin-left:50px;
                      margin-bottom:30px;
                      cursor:pointer;
@@ -237,13 +239,13 @@ article{
             
                           
                  .card{
-                     -moz-box-shadow: 9px 10px 7px 2px rgba(107,104,104,0.35);
-                     -webkit-box-shadow: 9px 10px 7px 2px rgba(107,104,104,0.35);
+                     box-shadow: 9px 10px 7px 2px rgba(107,104,104,0.35);
+                     -webkit-boxshadow: 9px 10px 7px 2px rgba(107,104,104,0.35);
                      -moz-box-shadow: 9px 10px 7px 2px rgba(107,104,104,0.35);
                      cursor:pointer;
                      &:hover{
                          transform:scale(1.1);
-                         transition: .1s all;
+                         transition: 0.1s all;
                             }
                        }  
     
