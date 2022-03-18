@@ -6,7 +6,7 @@ html body{
 
  /*$backGround: rgb(176, 241, 250);*/
  $display: grid;
- $articleBackGround:pink;
+ /*$articleBackGround:pink;*/
 $backgroundWhite: rgba(255, 255, 255, 0.3);
  
 main {
@@ -48,7 +48,7 @@ main {
 }
 
 aside{
-    background:purple;
+    background:rgb(71, 120, 245);
     margin-top:10px;
     padding-top:20px; 
     text-align:center;  
@@ -208,7 +208,7 @@ aside{
 
 
 article{
-            background: $articleBackGround;
+            /*background: $articleBackGround;*/
             margin-top:10px;
             padding-top:20px;  
     
@@ -244,9 +244,8 @@ article{
                      &:hover{
                          transform:scale(1.1);
                          transition: .1s all;
-                     }
-
-                        }  
+                            }
+                       }  
     
                 .card_title{
                     display:flex;
