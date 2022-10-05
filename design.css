@@ -5,46 +5,38 @@ html body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
 .accueil {
   position: relative;
   margin-top: 0.3%;
-  padding-top: 40%;
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: -1;
-  grid-row-end: 1;
+  padding-top: 20%;
+  height: auto;
   background-image: url("https://sportsante13.fr/wp-content/uploads/2019/10/judo-4454836_1280-1170x550.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .accueil span {
   font-size: 1em;
   position: relative;
-  margin-top: -19%;
-  color: white;
-  padding: 10px 10px;
+  margin-top: -1%;
+  color: black;
+  padding: 1% 1%;
+  flex-wrap: wrap;
 }
 
 h1 {
   position: relative;
-  font-size: 2, 5em;
+  font-size: 0, 1rem;
   padding-left: 1%;
-  margin-top: -30%;
-  color: white;
+  margin-top: -7%;
+  color: black;
 }
 
 .btn {
   position: relative;
-  width: 15%;
+  width: 30%;
   margin-left: 5%;
-  margin-top: -10%;
+  margin-top: -1%;
   margin-bottom: 3%;
   border-radius: 30px;
   border: none;
@@ -62,6 +54,7 @@ h1 {
 }
 
 aside {
+  width: 100%;
   background: #e6e8e8;
   margin-top: 1%;
   padding-top: 2%;
@@ -69,12 +62,12 @@ aside {
 }
 
 .contact {
-  width: 73%;
+  width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 10%;
-  margin-top: 10%;
-  margin-left: 10%;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
   border-radius: 20px;
   text-align: center;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -125,7 +118,7 @@ form input:hover {
 textarea {
   margin-top: 5px;
   margin-bottom: 30px;
-  width: 200px;
+  width: 100%;
   background: transparent;
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -171,57 +164,6 @@ textarea:hover {
   transition: 0.3s all;
 }
 
-.drop {
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
-  position: absolute;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
-}
-
-.drop-1 {
-  height: 70px;
-  width: 70px;
-  top: -20px;
-  left: -40px;
-  z-index: -1;
-}
-
-.drop-2 {
-  height: 70px;
-  width: 70px;
-  bottom: -30px;
-  right: -20px;
-  z-index: -1;
-}
-
-.drop-3 {
-  height: 90px;
-  width: 90px;
-  bottom: 250px;
-  right: -50px;
-  z-index: -1;
-}
-
-.drop-4 {
-  height: 80px;
-  width: 80px;
-  top: -40px;
-  right: -50px;
-}
-
-.drop-5 {
-  height: 70px;
-  width: 70px;
-  bottom: 170px;
-  left: -30px;
-  z-index: -1;
-}
-
 .adresse {
   margin-top: 30px;
 }
@@ -249,15 +191,7 @@ article h2 {
 
 .carte {
   position: relative;
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 250px 250px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
   box-sizing: border-box;
-  max-width: 1200px;
   width: 100%;
   height: auto;
   justify-content: space-around;
@@ -303,9 +237,8 @@ article table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid black;
-  padding-top: 40px;
-  margin-top: 50px;
-  margin-left: 0px;
+  padding-top: 1%;
+  margin-top: 1%;
 }
 
 thead tr {
@@ -335,6 +268,7 @@ tbody tr:last-of-type {
 
 article .event {
   width: 100%;
+  flex-wrap: wrap;
   text-align: justify;
   font-weight: bold;
   font-size: small;
@@ -344,37 +278,363 @@ article .event {
   color: white;
 }
 
-@media screen and (max-width: 400px) {
-  header img {
-    width: 40%;
-    height: auto;
-    border: border-box;
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .accueil {
+    position: relative;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("https://sportsante13.fr/wp-content/uploads/2019/10/judo-4454836_1280-1170x550.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .accueil span {
+    position: relative;
+    font-size: 1em;
+    margin-top: -15%;
+    margin-right: 60%;
+    padding-left: 2%;
+    color: white;
   }
 
   h1 {
-    color: red;
-    margin: -10% auto;
+    position: relative;
+    font-size: 2, 5em;
+    padding-left: 2%;
+    margin-top: -23%;
+    color: white;
   }
 
-  main {
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .btn {
+    position: relative;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 1%;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+  }
+
+  .btn:hover {
+    text-decoration: none;
+    color: black;
   }
 
   aside {
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #e6e8e8;
+    margin-top: 5%;
+    padding-top: 15%;
+    text-align: center;
+  }
+
+  .contact {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10%;
+    padding-left: 5%;
+    margin-top: 20%;
+    margin-left: 10%;
+    border-radius: 20px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+  }
+
+  .title, h3 {
+    margin-top: 5px;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  form {
+    position: relative;
+  }
+
+  form input {
+    margin: 3%;
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  form input:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  textarea {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.8rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  textarea:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .container #aside .contact form a {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .container #aside .contact form a:hover {
+    background-color: #09f54466;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+
+  .drop {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  }
+
+  .drop-1 {
+    height: 70px;
+    width: 70px;
+    top: -20px;
+    left: -40px;
+    z-index: -1;
+  }
+
+  .drop-2 {
+    height: 70px;
+    width: 70px;
+    bottom: -30px;
+    right: -20px;
+    z-index: -1;
+  }
+
+  .drop-3 {
+    height: 90px;
+    width: 90px;
+    bottom: 250px;
+    right: -50px;
+    z-index: -1;
+  }
+
+  .drop-4 {
+    height: 80px;
+    width: 80px;
+    top: -40px;
+    right: -50px;
+  }
+
+  .drop-5 {
+    height: 70px;
+    width: 70px;
+    bottom: 170px;
+    left: -30px;
+    z-index: -1;
+  }
+
+  .adresse {
+    margin-top: 30px;
+  }
+
+  .adresse a {
+    text-decoration: none;
+    color: black;
   }
 
   article {
-    display: block;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin-top: 1px;
+    padding-top: 2px;
+    margin-right: 35px;
+    width: 100%;
   }
 
-  .card {
-    display: block;
+  article h2 {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #565758;
+  }
+
+  .carte {
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 250px 250px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-sizing: border-box;
+    height: auto;
+    justify-content: space-around;
+    grid-gap: 40px 30px;
+    margin: 30px 10px;
+    margin-top: 10%;
+    cursor: pointer;
+    overflow-wrap: break-word;
+  }
+
+  article .carte .card {
+    box-shadow: 9px 10px 7px 2px rgba(107, 104, 104, 0.35);
+    -webkit-boxshadow: 9px 10px 7px 2px rgba(107, 104, 104, 0.35);
+    -moz-box-shadow: 9px 10px 7px 2px rgba(107, 104, 104, 0.35);
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: 0.1 s all;
+  }
+
+  .card_title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background: #fafafa;
+    text-transform: uppercase;
+  }
+
+  .card_img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .card__content {
+    padding: 15px;
+    background: #fafafa;
+    text-align: justify;
+  }
+
+  article table {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 3%;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+  thead tr th {
+    background-color: #d4d4d4bb;
+  }
+
+  tbody th {
+    font-weight: bold;
     flex-wrap: wrap;
+  }
+
+  th, td {
+    text-align: center;
+  }
+
+  tbody tr, td, th {
+    width: 300px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f1f0f0;
+  }
+
+  tbody tr:last-of-type {
+    border-bottom: #d4d4d4bb;
+  }
+
+  article .event {
+    flex-wrap: wrap;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: -0.1px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: small;
+    background: red;
+    color: white;
   }
 }
 
