@@ -298,6 +298,7 @@ article .carte .card{
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr ;
+        
     }
         .accueil{
             position :relative;
@@ -402,7 +403,7 @@ article .carte .card{
                   -webkit-backdrop-filter: blur(5px);
                   -moz-backdrop-filter:blur(5px);
                   box-shadow: 4px 4px 60px rgba(0,0,0,.2);
-                  color:white;
+                  color:black;
                   text-shadow:2px 2px 4px rgba(0,0,0,.2);
                   cursor:pointer;
               }
@@ -428,7 +429,7 @@ article .carte .card{
                   -webkit-backdrop-filter: blur(5px);
                   -moz-backdrop-filter:blur(5px);
                   box-shadow: 4px 4px 60px rgba(0,0,0,.2);
-                  color:white;
+                  color:black;
                   text-shadow:2px 2px 4px rgba(0,0,0,.2);
               }
               textarea:hover {
