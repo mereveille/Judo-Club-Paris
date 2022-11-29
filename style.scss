@@ -63,7 +63,7 @@ aside{
 
 .contact{
     width:100%;
-    height:100%;
+    height:auto;
     background-color:rgba(255, 255, 255, 0.3);
     padding:1%;
     margin-top: 1%;
@@ -204,6 +204,7 @@ article{
           grid-gap:5% 10%;
           margin-bottom:20%;
           margin-top: 5%;
+          margin-bottom: 30%;
           cursor:pointer;
           overflow-wrap: break-word;
          }
@@ -242,12 +243,12 @@ article .carte .card{
      
 
     article table{  
-        
+    
               width:100%;
               border-collapse:collapse;
               
               padding-top:1%;
-              margin-top: 1%;
+         
              
          }
      thead tr{
@@ -284,16 +285,10 @@ article .carte .card{
           color:white;
              }
              
-            /* @media screen and (max-width:500px){    
-             article table{  
-                :100%;
-                border-collapse:collapse;
-                border:1px solid black;
-                padding-top:10%;
-                margin-top: 10%;
-               }
-            }*/
- @media screen and (min-width:1200px){
+           
+ 
+            
+    @media screen and (min-width:1200px){
     main{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -367,7 +362,7 @@ article .carte .card{
           }
           
           .contact{
-                          width:80%;
+                         width:80%;
                          height:auto;
                          background-color: rgba(255, 255, 255, 0.3);
                          padding:10%;
@@ -520,7 +515,6 @@ article .carte .card{
           
           article{
                   display: grid;
-              
                   grid-column-start: 2;
                   grid-column-end: 3;
                   grid-row-start: 2;
@@ -560,6 +554,7 @@ article .carte .card{
                 grid-gap:40px 30px;
                 margin:30px 10px;
                 margin-top:10%;
+              
                 cursor:pointer;
                 overflow-wrap: break-word; 
                }
@@ -602,7 +597,7 @@ article .carte .card{
                         grid-column-end: 4;
                         grid-row-start: 3;
                         grid-row-end:4 ;    
-                        margin-top: 3%;
+                        margin-top:2%;
                         border-collapse:collapse;
                     
                    
